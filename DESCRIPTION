@@ -11,8 +11,11 @@ Description: Tools for Johns Hopkins Data Science Lab members so that they
     can brand and organize their packages based on the lab principles.
 License: GPL-2
 Imports:
-    usethis
+    usethis (>= 0.0.0.9000)
 Encoding: UTF-8
 LazyData: true
 Url: https://github.com/muschellij2/jhudsl
 BugReports: https://github.com/muschellij2/jhudsl/issues
+Suggests: 
+    covr
+RoxygenNote: 6.0.1.9000
