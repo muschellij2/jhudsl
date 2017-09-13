@@ -1,4 +1,3 @@
-
 #' JHU DSL Badge
 #'
 #' @return Character vector

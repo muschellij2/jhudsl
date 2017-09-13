@@ -1,6 +1,6 @@
 
 [![Travis build status](https://travis-ci.org/muschellij2/jhudsl.svg?branch=master)](https://travis-ci.org/muschellij2/jhudsl) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/muschellij2/jhudsl?branch=master&svg=true)](https://ci.appveyor.com/project/muschellij2/jhudsl) [![Coverage status](https://coveralls.io/repos/github/muschellij2/jhudsl/badge.svg?branch=master)](https://coveralls.io/r/muschellij2/jhudsl?branch=master)
-[![JHU Data Science](http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png)](http://jhudatascience.org/)
+[![JHU Data Science](inst/jhudsl_logo.png)](http://jhudatascience.org/)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 jhudsl
@@ -17,3 +17,27 @@ You can install jhudsl from github with:
 # install.packages("devtools")
 devtools::install_github("muschellij2/jhudsl")
 ```
+
+Installation
+------------
+
+You can install jhudsl from github with:
+
+``` r
+library(jhudsl)
+dsl_logo_url()
+#> [1] "http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png"
+```
+
+``` r
+cat(dsl_badge())
+#> [![JHU Data Science](http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png)](http://jhudatascience.org/)
+```
+
+If use `results = 'asis'`, it creates the logo:
+
+``` r
+cat(dsl_badge())
+```
+
+[![JHU Data Science](http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png)](http://jhudatascience.org/)
