@@ -3,3 +3,4 @@
 export(dsl_badge)
 export(dsl_logo_url)
 export(use_dsl_logo)
+importFrom(usethis,use_build_ignore)

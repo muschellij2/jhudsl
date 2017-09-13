@@ -4,10 +4,12 @@
 \alias{use_dsl_logo}
 \title{Use JHU DSL Logo}
 \usage{
-use_dsl_logo(base_path = ".")
+use_dsl_logo(base_path = ".", ...)
 }
 \arguments{
 \item{base_path}{Path to root directory}
+
+\item{...}{arguments to pass to \code{\link{dsl_badge}}}
 }
 \value{
 Invisible TRUE

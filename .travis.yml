@@ -1,5 +1,3 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 language: R
 sudo: false
 cache: packages
@@ -8,8 +6,20 @@ r:
 - oldrel
 - release
 - devel
-
-r_check_args: --as-cran --install-args=--build
-
+r_check_args: "--as-cran --install-args=--build"
 after_success:
 - Rscript -e 'covr::coveralls(type = "all")'
+
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: hYTcKnlo651Y+MH7+M5doiohgRHWXjYLBO7WNau85rEN1CbwIJggK7Ur/xV/n7JXeQUYRx8qrwmBezjTT0lsyQ9pBK3i8wwDotSFzIX9bPPnazChkG+/a+qmzyOYpX+pnFZpdUNUB7W1KSiqTcwuxwzR9rr62eBim811shJg8WCZj4zIJQIV4W9aL//CCLx36u93odJiM5wZZTVV5mc7Bz4mYOb4V9Ejveum8io25O9aXF9ZfMz8KTnZZSPYWOXxkX3D29lmgeVUD2oQPuDeO/Pb6u8+zq9ehOOdtLevxqhoFVvVyDREkvf+EgIqXmEthEDfjwtLjExVzTK8yrUUkdtG8flBhW3oWWuTlOsKcJLaj6JCFTjNpcLMsWQavjTRuG+On6sCvuCNrS4363hW8bRH+WLFfYEfwOBlELiwj19l7CSSpaD2/vzr8rNqJ+NRa5sHTxvlpSciV9nRcCofGI4BtxHbxzYgC1bhaGKoT59hgCJ+cuUrbyYbkNQwI0FkzVccmMXbqLN5XOdbUy1kHCI0oS76UAY5KRMwgTu9/JhlKV+ZaZwa1aQjLV9YiEhAKOrJrzLLVKtcg1N9OKw636VxA/585RtzINJFIWjb9L6AzDm10LxsZ3w2ylORf/CAymPEJUCe6Hl2udCAGt2qV6zTdNtkb8Ah8txGLZHBSqQ=
+  file_glob: true
+  file: jhudsl*.t*gz
+  on:
+    tags: true
+    repo: muschellij2/jhudsl
+
+
