@@ -14,5 +14,4 @@ JHU DSL logo URL
 }
 \examples{
 dsl_logo_url()
-dsl_logo_badge()
 }

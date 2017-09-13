@@ -4,6 +4,8 @@
 #' @export
 #' @param alt_text Alternate text for the badge if not found
 #' @param logo path to the logo
+#' @examples
+#' dsl_badge()
 dsl_badge = function(
   logo = dsl_logo_url(),
   alt_text = "JHU Data Science") {

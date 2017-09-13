@@ -17,3 +17,6 @@ Character vector
 \description{
 JHU DSL Badge
 }
+\examples{
+dsl_badge()
+}
