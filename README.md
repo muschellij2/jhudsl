@@ -26,12 +26,12 @@ You can install jhudsl from github with:
 ``` r
 library(jhudsl)
 dsl_logo_url()
-#> [1] "http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png"
+#> [1] "http://jhudatascience.org/images/logo.png"
 ```
 
 ``` r
-cat(dsl_badge())
-#> [![JHU Data Science](http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png)](http://jhudatascience.org/)
+dsl_badge()
+#> [1] "[![JHU Data Science](http://jhudatascience.org/images/logo.png)](http://jhudatascience.org/)"
 ```
 
 If use `results = 'asis'`, it creates the logo:
@@ -40,4 +40,4 @@ If use `results = 'asis'`, it creates the logo:
 cat(dsl_badge())
 ```
 
-[![JHU Data Science](http://johnmuschelli.com/jhudsl/inst/jhudsl_logo.png)](http://jhudatascience.org/)
+[![JHU Data Science](http://jhudatascience.org/images/logo.png)](http://jhudatascience.org/)

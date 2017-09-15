@@ -1,7 +1,7 @@
 Package: jhudsl
 Type: Package
 Title: Johns Hopkins Data Science Lab
-Version: 0.2.3
+Version: 0.3
 Authors@R: c(person(given = "John",
            family = "Muschelli",
            role = c("aut", "cre"),
