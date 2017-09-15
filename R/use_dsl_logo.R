@@ -6,6 +6,8 @@
 #' @return Invisible TRUE
 #' @export
 #' @importFrom usethis use_build_ignore
+#' @examples
+#' use_dsl_logo(base_path = tempdir())
 use_dsl_logo = function(
   base_path = ".", ...) {
   logo = system.file("jhudsl_logo.png", package = "jhudsl")

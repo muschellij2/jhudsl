@@ -17,3 +17,6 @@ Invisible TRUE
 \description{
 Use JHU DSL Logo
 }
+\examples{
+use_dsl_logo(base_path = tempdir())
+}
